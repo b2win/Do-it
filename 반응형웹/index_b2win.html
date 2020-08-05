@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>FLAT DESIGN</title>
+<link rel="stylesheet" type="text/css" href="css/css_b2win.css">
+<link rel="stylesheet" type="text/css" href="">
+<link rel="shortcut icon" href="6장/완성/responsive_web/images/favicon/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="6장/완성/responsive_web/images/favicon/flat-design-touch.png">
+<script src="6장/완성/responsive_web/js/jquery.min.js"></script>
+<style>
+/* 모바일용 CSS */
+/* 기본 CSS */
+#wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#wrap section {
+    box-sizing: border-box;
+}
+
+/* 태블릿용 CSS */
+@media all and (min-width: 768px){
+/* 기본 CSS */
+#wrap {
+    flex-flow: row wrap;
+}
+}
+
+/*PC용 CSS */
+@media all and (min-width:960px){
+#wrap {
+    position: relative;
+    width: 90%;
+}
+}
+</style>
+</head>
+<body>
+    <div id="wrap">
+        
+    </div>
+</body>
+</html>
