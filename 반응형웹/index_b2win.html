@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 <title>FLAT DESIGN</title>
-<link rel="stylesheet" type="text/css" href="css/css_b2win.css">
+<link rel="stylesheet" type="text/css" href="css/css_reset_b2win.css">
 <link rel="stylesheet" type="text/css" href="">
 <link rel="shortcut icon" href="6장/완성/responsive_web/images/favicon/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="6장/완성/responsive_web/images/favicon/flat-design-touch.png">
@@ -24,6 +24,29 @@
     box-sizing: border-box;
 }
 
+/* 인포메이션 영역 CSS */
+.info_section {
+    order: 1;
+    width: 100%;
+    background: #2ecc71;
+    border-bottom: 1px solid #39d67c;
+}
+
+.info_list {
+    display: flex;
+}
+
+.info_list li {
+    width: 25%;
+    text-align: center;
+}
+
+.info_list li a {
+    display: block;
+    padding: 15px 0;
+    padding: 0.938rem 0;
+}
+
 /* 태블릿용 CSS */
 @media all and (min-width: 768px){
 /* 기본 CSS */
@@ -39,11 +62,136 @@
     width: 90%;
 }
 }
+
+/* 인포메이션 영억 CSS */
+.info_section {
+    order: 0;
+    position: absolute;
+    top: 30px;
+    top: 1.875rem;
+    right: 30px;
+    right: 1.875rem;
+    z-index: 30;
+    width: auto;
+    border-bottom: 0;
+}
+
+.info_list li {
+    width: auto;
+    margin-left: 15px;
+    margin-left: 0.625rem;
+}
+
+.info_list li a {
+    padding: 0;
+}
+
 </style>
 </head>
 <body>
     <div id="wrap">
-        
+        <section class="info_section">
+            <ul class="info_list">
+                <li><a href="index_b2win.html"><img src="6장/완성/responsive_web/images/s_images/info_icon_01.png" alt=""</a></li>
+                <li><a href=""><img src="6장/완성/responsive_web/images/s_images/info_icon_02.png" alt=""</a></li>
+                <li><a href=""><img src="6장/완성/responsive_web/images/s_images/info_icon_03.png" alt=""</a></li>
+                <li><a href=""><img src="6장/완성/responsive_web/images/s_images/info_icon_04.png" alt=""</a></li>
+            </ul>
+        </section>
+        <header class="header">
+            <h1 class="logo">
+                <a href="index_b2win.html">flat<br>design</a>
+            </h1>
+            <nav class="nav">
+                <ul class="gnb">
+                    <li><a href="index_b2win.html">홈</a><span class="sub_menu_toggle_btn">하위 메뉴 토글 버튼</span></li>
+                    <li><a href="introduce_b2win.html">플랫 디자인이란?</a><span class="sub_menu_toggle_btn">하위 메뉴 토글 버튼</span></li>
+                    <li><a href="gallery_b2win.html">갤러리</a><span class="sub_menu_toggle_btn">하위 메뉴 토글 버튼</span></li>
+                    <li><a href="board_b2win.html">문의 사항</a><span class="sub_menu_toggle_btn">하위 메뉴 토글 버튼</span></li>
+                </ul>
+            </nav>
+            <span class="menu_toggle_btn">전체 메뉴 토글 버튼</span>
+        </header>
+        <section class="slider_section">
+            <span class="prev_btn">이전 버튼</span><span class="next_btn">다음 버튼</span>
+        </section>
+        <section class="latest_post_section">
+            <h2 class="title">최근 글</h2>
+            <ul class="latest_post_list">
+                <li><a href="">안녕하세요 홈페이지가 오픈...</a></li>
+                <li><a href="">홈페이지 리뉴얼...</a></li>
+                <li><a href="">flat design은...</a></li>
+                <li><a href="">blog에서 다양한 정보를...</a></li>
+                <li><a href="">저는 누구일까요?...</a></li>
+            </ul>
+        </section>
+        <section class="popular_post_section">
+            <h2 class="title">인기 글</h2>
+            <ul class="popular_post_list">
+                <li><a href="">안녕하세요 홈페이지가 오픈...</a></li>
+                <li><a href="">홈페이지 리뉴얼...</a></li>
+                <li><a href="">flat design은...</a></li>
+                <li><a href="">blog에서 다양한 정보를...</a></li>
+                <li><a href="">저는 누구일까요?...</a></li>
+            </ul>
+        </section>
+        <section class="gallery_section">
+            <ul class="gallery_list">
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="6장/완성/responsive_web/images/p_images/gallery_01.jpg" alt="">
+                            <figcaption>디자인 트렌트 플랫</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="6장/완성/responsive_web/images/p_images/gallery_02.jpg" alt="">
+                            <figcaption>원색이 포인트 플랫</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="rankup_section">
+            <h2 class="title">인기 검색어</h2>
+            <ul class="rankup_list">
+                <li><a href="">반응형 웹</a></li>
+                <li><a href="">미디어 쿼리</a></li>
+                <li><a href="">뷰포트</a></li>
+                <li><a href="">CSS 트릭스</a></li>
+                <li><a href="">W3C</a></li>
+                <li><a href="">루크 W</a></li>
+                <li><a href="">CSS 젠 가든</a></li>
+                <li><a href="">클리어 보스</a></li>
+                <li><a href="">XE</a></li>
+                <li><a href="">워드프레스</a></li>
+            </ul>
+        </section>
+        <section class="banner_section">
+            <div class="banner_box_01">
+                <a href=""><img src="6장/완성/responsive_web/images/s_images/w3c_logo.png" alt=""></a>
+            </div>
+            <div class="banner_box_02">
+                <ul class="banner_list">
+                    <li><a href=""><img src="6장/완성/responsive_web/images/s_images/js_logo.png" alt=""></a></li>
+                    <li><a href=""><img src="6장/완성/responsive_web/images/s_images/html_logo.png" alt=""></a></li>
+                    <li><a href=""><img src="6장/완성/responsive_web/images/s_images/css_logo.png" alt=""></a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="social_section">
+            <ul class="social_list">
+                <li><a href=""><img src="6장/완성/responsive_web/images/s_images/social_icon_01.png" alt=""></a></li>
+                <li><a href=""><img src="6장/완성/responsive_web/images/s_images/social_icon_02.png" alt=""></a></li>
+                <li><a href=""><img src="6장/완성/responsive_web/images/s_images/social_icon_03.png" alt=""></a></li>
+            </ul>
+        </section>
+        <footer class="footer">
+            <p>copyright&copy;2014.flat design blog all rights reserved.</p>
+        </footer>
     </div>
 </body>
 </html>
