@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>INDIGO</title>
+<link rel="stylesheet" type="text/css" href="9장/완성/responsive_web_normal/css/reset.css">
+<link rel="stylesheet" type="text/css" href="">
+<link rel="shortcut icon" href="9장/완성/responsive_web_normal/images/favicon/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="9장/완성/responsive_web_normal/images/favicon/indigo-touch-icon.png">
+<script src="9장/완성/responsive_web_normal/js/jquery.min.js"></script>
+<style>
+/* 모바일용 CSS */
+/* 기본 CSS */
+.container {
+        width: 90%;
+        max-width: 100%;
+        margin: 0 auto;
+}
+
+.cfixed:after, .container:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.blind {
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.sec-tit {
+    font-size: 42px;
+    color: #3f51b5;
+    font-weight: normal;
+}
+
+.divider {
+    width: 90%;
+    max-width: 1132px;
+    margin: 0 auto;
+    margin-top: 77px;
+    background: #3f51b5;
+}
+
+/* 태블릿용 CSS */
+@media all and (min-width:768px){
+
+/* 기본 CSS */
+.divider {
+    margin-top: 124px;
+}
+
+.m-divider {
+    margin-top: 124px;
+}
+
+
+
+}
+
+/* PC용 CSS */
+@media all and (min-width:1132px){
+
+}
+
+</style>
+</head>
+<body>
+    <div id="wrap">
+    <header class="header cfixed">
+        <h1 class="logo"><a href="">INDIGO</a></h1>
+        <nav>
+            <ul class="gnb">
+                <li><a href="">HOME</a></li>
+                <li><a href="">WE ARE</a></li>
+                <li><a href="">WORK</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <span class="menu-toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        <article class="slider">
+            <img src="9장/완성/responsive_web_normal/images/p-images/slide01.jpg" alt="">
+        </article>
+        <section class="content">
+            <section class="display-section">
+                <div class="container">
+                    <h2 class="sec-tit">WE ARE</h2>
+                    <p class="desc">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a<br> piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+            </section>
+            <section class="promotion-section">
+                <div class="container">
+                    <ul class="promo-list">
+                        <li>
+                            <a href="">
+                                <img src="9장/완성/responsive_web_normal/images/s-images/promo01.png" alt="">
+                                <h3>HOME</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="9장/완성/responsive_web_normal/images/s-images/promo02.png" alt="">
+                                <h3>WE ARE</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="9장/완성/responsive_web_normal/images/s-images/promo03.png" alt="">
+                                <h3>WORK</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="9장/완성/responsive_web_normal/images/s-images/promo04.png" alt="">
+                                <h3>BLOG</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="divider">
+            
+        </section>
+    </header>
+
+    </div>
+</body>
+
+</html>
