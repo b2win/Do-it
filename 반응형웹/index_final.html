@@ -8,14 +8,14 @@
 <link rel="stylesheet" type="text/css" href="">
 <link rel="shortcut icon" href="9장/완성/responsive_web_normal/images/favicon/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="9장/완성/responsive_web_normal/images/favicon/indigo-touch-icon.png">
-<script src="9장/완성/responsive_web_normal/js/jquery.min.js"></script>
+<script src="js/indigo.min.js"></script>
 <style>
 /* 모바일용 CSS */
 /* 기본 CSS */
 .container {
-        width: 90%;
-        max-width: 100%;
-        margin: 0 auto;
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .cfixed:after, .container:after {
@@ -195,6 +195,7 @@ background:#3f51b5;
     z-index: 10;
     width: 100%;
     height: 100%;
+    background: #3f51b5;
     content: "";
     opacity: 0;
     transition: all 0.2s;
@@ -222,6 +223,7 @@ background:#3f51b5;
     margin-bottom: 8px;
     font-size: 23px;
     color: #fff;
+    font-weight: normal;
 }
 
 .work-section .work-list li .info span {
@@ -353,6 +355,12 @@ background:#3f51b5;
     background: none;
 }
 
+.header .gnb li {
+    float: left;
+    margin-left: 21px;
+    border-bottom: 0;
+}
+
 .header .gnb li a {
     color: #3f51b5;
     padding: 0;
@@ -377,6 +385,8 @@ background:#3f51b5;
     float: left;
     width: 23.0469%;
     /* 177px ÷ 768px*/
+    margin-left:2.604166666666667%;
+    /* 20px ÷ 768px*/
     margin-top: 0;
 }
 
@@ -436,6 +446,7 @@ background:#3f51b5;
 .contact-section .sec-tit {
     margin-bottom: 76px;
 }
+
 .contact-section .form-box .form, .contact-section .form-box .textarea {
     float: left;
     width: 48.6979%;
@@ -552,7 +563,6 @@ background:#3f51b5;
     /*20px ÷ 844px*/
 }
 }
-
 </style>
 </head>
 <body>
