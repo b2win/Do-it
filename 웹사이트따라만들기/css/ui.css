@@ -304,6 +304,8 @@ footer > a.instar:hover {
 #container .content.this .conbox .content_wrap {
   padding: 30px 50px 50px 50px;
   opacity: 1;
+  transition: all 1.7s;
+  transition-delay: 0.8s;
 }
 
 #container .content {
@@ -327,14 +329,14 @@ footer > a.instar:hover {
   top: 0;
 }
 
-.pargraph_tit {
+.pargrph_tit {
   margin-bottom: 50px;
   font-size: 24px;
   color: #fff;
   position: relative;
 }
 
-.pargraph_tit:after {
+.pargrph_tit:after {
   content: "";
   display: block;
   width: 30px;
