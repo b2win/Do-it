@@ -15,9 +15,9 @@ function calcDate(days) {
 var future = toFirst + days * (1000 * 60 * 60 *24);
 var someday = new Date(future);
 var year = someday.getFullYear();
-var month = someday.hetMonth() + 1;
+var month = someday.getMonth() + 1;
 var date = someday.getDate();
-document.querySelector('#date' + days).innerText = year + "년" + month + "월" + date + "일";
+document.querySelector("#date" + days).innerText = year + "년" + month + "월" + date + "일";
 }
 future = toFirst + 200 * (1000 * 60 * 60 * 24);
 someday = new Date(future);
